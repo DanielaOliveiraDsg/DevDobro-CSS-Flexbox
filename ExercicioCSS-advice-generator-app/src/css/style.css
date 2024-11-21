@@ -1,0 +1,68 @@
+:root{
+    --color-background: hsl(218, 23%, 16%);
+    --color-destaque: hsl(150, 100%, 66%);
+    --color-card: hsl(217, 19%, 24%);
+    --color-texto: hsl(193, 38%, 86%);
+}
+
+body{
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+  background-color: var(--color-background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    max-width: 450px;
+    height: 280px;
+    background-color: var(--color-card);
+    border-radius: 10px;
+   
+    /* min-width: 300px; */
+    padding: 20px;
+    margin: 20px;
+
+    position: relative;
+}
+
+.card .advice-number{
+    color:var(--color-destaque);
+    font-size: 15px;
+    letter-spacing: 5px;
+    /* margin-top: 30px; */
+}
+
+.card .advice{
+    color: var(--color-texto);
+    font-size: 23px;
+    padding: 23px;
+    text-align: center;
+}
+
+.card picture img{
+    width: 100%;
+}
+
+.card button{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--color-destaque);
+    position: absolute;
+    bottom: -30px;
+    cursor: pointer;
+}
+
+.card button:active{
+    box-shadow: 0 0 30px var(--color-destaque);
+}
